@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>페이지 제목</title>
+        <script>javascript</script>
+        <style type="text/css"></style>
+        <!-- css 파일 상속하기  -->
+        <link rel="stylesheet" href="style.css">
+
+</head>
+ 
+<body>
+    <h1>HTML</h1>
+    <!-- 하이퍼링크  -->
+    <h1><a href="index.html">HTML</a></h1>
+    <!-- 리스트 -->
+    <ol>  
+      <li>기술소개</li>
+      <li>기본문법</li>
+      <li>하이퍼텍스트와 속성</li>
+      <li>리스트와 태그의 중첩</li>
+    </ol>
+    <!-- 이미지 -->
+    <img src="img.jpg" height="300" alt="산 이미지" title="산 이미지">
+
+    <!-- 버튼 -->
+    <form action="http://localhost/form.php">
+        <input type="text">
+        <input type="submit" value="전송">
+        <input type="button" value="버튼" onclick="alert('hello world')">
+        <input type="reset">
+        <!-- 화면 이동 -->
+        <button type="button" class="btn btn-primary active" id="btn" 
+          	onclick="document.location.href='flexbox.html'">test</button>
+    </form>
+</body>
+</html>

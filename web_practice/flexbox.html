@@ -1,0 +1,81 @@
+<!-- 참고 https://thrillfighter.tistory.com/489 -->
+<!-- flexbox는 1차원 그리드는 2차원 레이아웃 -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>페이지 제목</title>
+
+        <style>
+            .container {
+            display: flex;
+            /* 수평 방향 여백 설정  */
+            justify-content : flex-start; /* flex-start,flex-end, center, space-between, space-around */
+            /* 수직 방향 여백 설정 */
+            align-items : flex-start; /* flex-start,flex-end, center, baseline, stretch */
+            /* 정렬 방향 설정  */
+            flex-direction : row; /* row,row-reverse, column, column-reverse */
+            /* 줄바꿈 속성  */
+            flex-wrap : nowrap; /*nowrap, wrap, wrap-reverse */
+            /* 위에 두개 한번에*/
+            /* flex-flow : row wrap; flex-direction과 flex-wrap의 조합 */
+            /* 줄바꿈시 여백 설정  */
+            align-content : flex-start; /* flex-end, center, space-between, space-around*/
+            }
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: gray;
+                border: 1px solid white;
+            }
+
+            .menu{
+                width: 200px;
+                height: 100px;
+                background-color: white;
+                border: 1px solid black;
+            }
+            
+            /* 순서 정해주기 작을 수록 먼저 배치  */
+            .container :nth-child(1) {order : 100 }
+            .container :nth-child(2) {order : -2 }
+            .container :nth-child(3) {order : 1 }
+
+            /* 비율만큼 여백 차지  */
+            .container :nth-child(1) {flex-grow : 1 }
+            .container :nth-child(2) {flex-grow : 2 }
+            .container :nth-child(3) {flex-grow : 3 }
+
+            /* 아이템의 기본너비  */
+            .container :nth-child(1) {flex-basis : 100px}
+            /* 아이템이 줄이드는 비율 */
+            .container :nth-child(1) {flex-basis : 100px}
+
+            .container2{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            /* 정해진 비율로 빈칸 없이 확대 축소  */
+            /* grow와 shrink를 같은 값으로 하면 빈칸없이 같은 넓이로 확대 축소  */
+            .container2 :nth-child(1) {flex-basis : 100px; flex-grow: 3; flex-shrink:3 ;}
+            .container2 :nth-child(2) {flex-basis : 100px; flex-grow: 2; flex-shrink:2 ;}
+            .container2 :nth-child(3) {flex-basis : 100px; flex-grow: 1; flex-shrink:1 ;}
+
+
+          </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+
+        <div class = "container2">
+            <div class ="menu"> 1번 메뉴 </div>
+            <div class ="menu"> 2번 메뉴 </div>
+            <div class ="menu"> 3번 메뉴 </div>
+
+    </body>
+</html>

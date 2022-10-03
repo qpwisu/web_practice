@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <!-- awesome 스크립트에서 무료 아이콘 사용하기 src는 개인 코드  -->
+    <script 
+        src="https://kit.fontawesome.com/fe87d919ca.js" 
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 해더 -->
+    <header>
+        <!-- .log+.icons -->
+        <div class="log">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+
+        </div>
+    </header>
+    <!-- header+section.player+section.info+section.Upnext -->
+    
+    <section class="player">
+        <video controls src="video/video.mp4"></video>
+    </section>
+    <div class="infoAndUpNext">
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>자연</li>
+                    <li>환경</li>
+                    <li>동영상</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="tilte">
+                        나의 첫번쨰 클론 코딩 드림코딩 엘리에서 배워서 만든 자연환경 고화질 동영상 
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">
+                        1M view 
+                    </span>
+                </div>
+            </div>
+            <ul class="actions">
+                <!-- (li>button>i)*5 -->
+                <li>
+                    <button>
+                        <i class = "fas fa-thumbs-up">
+                            1K
+                        </i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class = "fas fa-thumbs-down"> 
+                            0
+                        </i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class = "fas fa-share">
+                            Share
+                        </i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class = "fas fa-plus">
+                            Save
+                        </i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class = "fab fa-font-awesome-flag">
+                            Report
+                        </i>
+                    </button>
+                </li>
+            </ul>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/avatar.jpg" alt="">
+                    <div class="info">
+                        <span class="name">장한영</span>
+                        <span class="subscribers">1M subcribers</span></div>
+                    </div>
+                <button class="subscribe">
+                    subscribe
+                </button>
+            </div>
+            
+        </section>
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <!-- img를 단독으로 사용하면 반응형이 아니어서 태그로 묶어서 사용해야함 -->
+                    <div class="img"><img src="image/1.webp" alt=""></div>
+                    
+                    <div class="itemInfo">
+                        <span class="title">자연환경에 대한 동영상</span>
+                        <span class="name">한영</span>
+                        <span class="views">10 view</span>
+                    </div>
+                    <button class="morBtn"> <i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/2.webp" alt=""></div>
+                    <div class="itemInfo">
+                        <span class="title">자연환경에 대한 동영상</span>
+                        <span class="name">한영</span>
+                        <span class="views">10 view</span>
+                    </div>
+                    <button class="morBtn"> <i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/3.webp" alt=""></div>
+                    <div class="itemInfo">
+                        <span class="title">자연환경에 대한 동영상</span>
+                        <span class="name">한영</span>
+                        <span class="views">10 view</span>
+                    </div>
+                    <button class="morBtn"> <i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/4.webp" alt=""></div>
+                    <div class="itemInfo">
+                        <span class="title">자연환경에 대한 동영상</span>
+                        <span class="name">한영</span>
+                        <span class="views">10 view</span>
+                    </div>
+                    <button class="morBtn"> <i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/5.webp" alt=""></div>
+                    <div class="itemInfo">
+                        <span class="title">자연환경에 대한 동영상</span>
+                        <span class="name">한영</span>
+                        <span class="views">10 view</span>
+                    </div>
+                    <button class="morBtn"> <i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
